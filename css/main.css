@@ -141,3 +141,8 @@ h2::after {
   text-decoration: none;
   color: #7deacb;
 }
+
+.mail_link:hover {
+  color: #a5f7e0;
+  font-weight: bold;
+}
