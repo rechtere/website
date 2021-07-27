@@ -1,0 +1,138 @@
+.body {
+  font-family: "Ubuntu", sans-serif;
+}
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(14, 14, 70);
+  opacity: 0.8;
+  z-index: 1;
+}
+.container {
+  animation-duration: 3.2s;
+  animation-name: fadein;
+  width: 400px;
+  transition: all ease-in-out;
+}
+.main-text {
+  position: relative;
+}
+.main-text h1 {
+  font-size: 4.5rem;
+  letter-spacing: 20px;
+  margin-top: -3vh;
+  margin-left: 22px;
+}
+.main-text h3 {
+  margin-top: 4.5vh;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+.main-text p {
+  margin-top: 2vh;
+  font-size: 23px;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 60vw !important;
+  }
+  .container {
+    width: 300px;
+  }
+  .main-text h1 {
+    margin-left: 11px;
+  }
+}
+@media only screen and (max-height: 650px) {
+  .logo {
+    margin-top: -15vh;
+    height: 40vh !important;
+  }
+  .main-text h1 {
+    font-size: 38px;
+    letter-spacing: 17px;
+    margin-left: 16px;
+    margin-top: -10px;
+  }
+  .main-text h3 {
+    font-size: 38px;
+  }
+  .main-text p {
+    font-size: 14px;
+  }
+  h2::before,
+  h2::after {
+    background-color: #7deacb;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 23px;
+  }
+}
+
+h2 {
+  overflow: hidden;
+  text-align: center;
+  color: #7deacb;
+  font-size: 14px;
+}
+h2::before,
+h2::after {
+  background-color: #7deacb;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 53px;
+}
+h2::before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+h2::after {
+  left: 0.5em;
+  margin-right: -50%;
+}
