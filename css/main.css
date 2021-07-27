@@ -136,3 +136,8 @@ h2::after {
   left: 0.5em;
   margin-right: -50%;
 }
+
+.mail_link {
+  text-decoration: none;
+  color: #7deacb;
+}
